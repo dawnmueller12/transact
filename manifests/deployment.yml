@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: transact 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: transact
+  template:
+    metadata:
+      labels:
+        app: transact 
+    spec:
+      containers:
+        - name: transact 
+          image: bohaacr.azurecr.io/transact
+          ports:
+          - containerPort: 80
