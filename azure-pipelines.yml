@@ -11,12 +11,12 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '4e00a0c2-f693-48cd-9b3d-ab0eb1ff6c49'
+  dockerRegistryServiceConnection: '5ac436ec-c4dd-4261-bbc6-987edee8ca32'   #4e00a0c2-f693-48cd-9b3d-ab0eb1ff6c49'
   imageRepository: 'transact'
-  containerRegistry: 'jpm1acr.azurecr.io'
+  containerRegistry: 'jpmbohaACR.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'jpm1acrb0f6-auth'
+  imagePullSecret: 'bohaacrb0f6-auth'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
